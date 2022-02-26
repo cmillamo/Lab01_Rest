@@ -11,8 +11,8 @@ Expone dos servicios tipo REST:
      “dna”:["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
     }
     Mensajes del servicio:
-    200 OK - Es mutante 
-    200 OK - Es humano.
+    200 OK - Mutante 
+    200 OK - No Mutante.
     Mensaje de Error:
     403- Forbidden - com.proyecto.modelo.exceptions.PrerequisitosException: No cumple con el tamaño requerido - 6 Cadena ATGCGAD Tamaño 7
     403- Forbidden - com.proyecto.modelo.exceptions.PrerequisitosException: No cumple con la base nitrogenda de ADN
