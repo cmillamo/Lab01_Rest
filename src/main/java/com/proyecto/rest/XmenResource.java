@@ -49,10 +49,10 @@ public class XmenResource {
           
         try {
             if (matriz.isMutant()){
-                return Response.ok("Es mutante").build();
+                return Response.ok("Mutante").build();
             }
             else{
-                return Response.status(Response.Status.FORBIDDEN).entity("Es humano").build();
+                return Response.status(Response.Status.FORBIDDEN).entity("No Mutante").build();
             }
         } catch (PrerequisitosException ex) {
             
