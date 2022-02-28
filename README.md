@@ -1,5 +1,21 @@
 # Lab01_Rest
-Este proyecto esta en hecho en java, esta sobre un servidor de aplicaciones Glassfish 4.1 y una base de datos MYSQL 5.0. 
+
+Componentes que se utilizaron para la solución:
+  Glassfish 4.1
+  Mysql 5.0 
+  Java 1.8 
+  JPA
+  
+Nivel 1: Para el punto la manera de solucionar el problema fue dividir la matriz en 4 partes. 
+         Creé cuatro ciclos que me validaban las cadenas de dna en forma verticales, horizontales y dos grupos de cadenas con las posibles diagonales. Teniendo siempre presente          que la validación termina en el momento que cumpla la condición de ser mutante. Cuando va hacer costoso realizar esta validación cuando el usuario no es mutante porque          se validan todas las posibles combinaciones. 
+         Seguido a esto aplique una expresión regular que me evaluara el patrón definido dada una cadena.
+         Para los casos de prerrequisitos se utilizó la función de patrón con expresión regular para validar que solo permitiera las letras definidas en el requerimiento.
+              
+ Nivel 2: Teniendo como base el desarrollo en el nivel 1 simplemente se creó el servicio y se configuraron los mensajes. En este punto se realizó la inserción de las cadenas dna que se evalúan.    
+ 
+ Nivel 3:  Se creó un servicio REST tipo GET en el cual se ejecuta una consulta de base que calcula las estadísticas de las verificaciones de DNA. 
+
+
 Expone dos servicios tipo REST: 
  1. Se crear el servicio “/mutant/” en donde se pueda detectar si un humano es
     mutante enviando la secuencia de ADN mediante un HTTP POST con un Json el cual tenga el
